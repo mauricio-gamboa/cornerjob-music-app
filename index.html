@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" data-framework="javascript">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cornerjob • Music App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <style>
+        .ellipis {
+            overflow: hidden;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            display: block;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h1 class="text-center">Cornerjob music!</h1>
+            </div>
+        </div>
+        <div class="row js-songs-form">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div style="margin-bottom: 15px;">
+                    <div class="form-group">
+                        <input type="text" class="form-control js-get-songs-input" placeholder="Artist, song, album..." autofocus>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control js-sort-by-select">
+                            <option value="">Select one...</option>
+                            <option value="trackTimeMillis">Length</option>
+                            <option value="primaryGenreName">Genre</option>
+                            <option value="trackPrice">Price</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary btn-block js-get-songs-button">Get the music!</button>
+                </div>
+            </div>
+        </div>
+        <div class="row js-songs-list">
+        </div>
+        <div class="row js-song">
+        </div>
+    </div>
+    <script src="js/helpers.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
